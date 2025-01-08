@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>exercises</title>
+
+  <style>
+          .exercise {
+            display: block;
+            width: 200px;
+            border: 1px solid gray;
+          }
+
+          .dog-image {
+            width: 200px;
+          }
+
+          .dog-name {
+            display: block;
+            margin-bottom: 0;
+            margin-left: 5px;
+          }
+
+          .dog-info { 
+            margin-left: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: inline-block;
+          }
+
+          .add-fd-btn { 
+            margin-left: 5px;
+            margin-bottom: 8px;
+            display: block;
+            background-color: rgb(64, 90, 236);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            width: 104.87px;
+            padding: 6px;
+            cursor: pointer;
+          }
+
+          .add-fd-btn:hover { 
+            background-color: blue;
+          }
+
+          .tweet-box {
+            margin-top: 10px;
+            border: 1px solid rgb(185, 181, 181);
+            border-radius: 40px;
+            width: 460px;
+          }
+          
+          .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          
+          .search-input {
+            padding: 6px;
+            vertical-align: middle;
+            margin-left: 20px;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            border-radius: 50px;
+          }
+
+          .tweet-btn { 
+            background-color: rgb(47, 120, 230);
+            border: none;
+            border-radius: 40px;
+            width: 100px;
+            padding: 8px 8px;
+            color: white;
+            font-size: 18px;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+          
+          
+  </style>
+</head>
+<body>
+  <div class="exercise">
+    <img class="dog-image" src="exercise-images/dog.jpeg" alt="video thumbnail">
+    <strong class="dog-name">Oliver</strong>
+    <p class="dog-info">2 mutual friends</p>
+    <button class="add-fd-btn">Add Friend</button>
+  </div>
+
+  <div class="tweet-box" id="tweet-box">
+      <img class="profile-image" src="exercise-images/dog.jpeg" alt="">
+      <input class="search-input" type="text" placeholder="What's happening">
+      <button class="tweet-btn" 
+      onclick="
+          alert('The input box container background color will change \n Click ok to see it happening!')
+          document.getElementById('tweet-box').style.backgroundColor = '#848839';
+      "
+      >Tweet</button>
+  </div>
+</body>
+</html>

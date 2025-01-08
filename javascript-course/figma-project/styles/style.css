@@ -1,0 +1,40 @@
+
+p {
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 400;
+  transition: color 0.74s;
+  text-align: center;
+}
+
+p:hover {
+  color: rgb(30, 91, 221);
+  cursor: pointer;
+}
+
+a { 
+  text-decoration: none;
+  color: #a800eb;
+  transition: text-decoration 0.70s;
+}
+
+a:hover {
+  text-decoration:underline #cd9ee0;
+}
+
+.join-btn {
+  background-color: white;
+  color: rgb(30, 91, 221);
+  border: 1px solid rgb(30, 91, 221);
+  border-radius: 4px;
+  padding: 8px 10px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background-color .40s, color .40s;
+}
+
+.join-btn:hover {
+  background-color: rgb(30, 91, 221);
+  color: white; 
+}
