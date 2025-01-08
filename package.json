@@ -1,0 +1,19 @@
+{
+  "name": "project-figma-npm",
+  "version": "1.0.0",
+  "description": "^C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alek.det",
+  "license": "MIT",
+  "keywords": [
+    "npm",
+    "example",
+    "beginner"
+  ],
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
