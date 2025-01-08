@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body { 
+      margin: 0;
+      padding:0;
+      height: 100vh;
+    }
+
+    #wall { 
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      background-color: black;
+      height: 100%;
+    }
+
+    button { 
+      border: none; 
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 18px;
+      cursor: pointer;
+    }
+
+    button:hover { 
+      opacity: 0.8;
+    }
+
+    #onBtn {
+      background-color: #488400;
+      color: white;
+    }
+
+    #offBtn { 
+      color: white;
+      background-image: url(federica-giusti-uYl9tJsnBXk-unsplash.jpg);
+      height: 100px;
+      width: 400px;
+    }
+
+    .popUp {
+      display: none;
+      border: 1px solid #884747;
+      background-color: #883884;
+      border-radius: 8px;
+      width: 200px;
+      
+    }
+
+    .nav-items {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       width: 100%;
+       align-items: center;
+    }
+
+    a { 
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="wall">
+    <audio id="oloko">
+      <source src="medias/audios/faustao-oloko-meu.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gta">
+      <source src="gta-san-andreas-ah-shit-here-we-go-again_BWv0Gvc.mp3" type="audio/mp3">
+    </audio>
+
+
+    <div class="popUp" id="popUp">
+        <nav class="nav-items">
+          <a href="">cachorro</a>
+          <a href="">Papagaio</a>
+          <a href="">Leao</a>
+          <a href="">Oloko Bicho</a>
+        </nav>
+    </div>
+
+
+    <a href="sidebar.html">Go to Sidebar web</a>
+
+
+    <button id="onBtn" type="button">on</button>
+    <button id="offBtn" type="button">off</button>
+  </div>
+
+  <script>
+      let wall = document.getElementById('wall');
+      const x = document.getElementById('oloko');
+      const gTa = document.getElementById('gta')
+
+      const popUp = document.getElementById('popUp');
+      document.getElementById('onBtn').addEventListener('click', function() {
+        wall.style.backgroundColor = 'white';
+        x.play();
+
+        if(popUp.style.display = 'none') {
+          popUp.style.display = "block";
+      }
+      })
+
+      document.getElementById('offBtn').addEventListener('click', function() { 
+        wall.style.backgroundColor = 'black';
+        if(popUp.style.display = 'block') { 
+          popUp.style.display = 'none';
+        }
+      })
+
+    
+
+
+
+
+      
+  </script>
+</body>
+</html>

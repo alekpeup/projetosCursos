@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/6b67a1d4db.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <header>
+      <div class="menu-icon" id="menu-icon">
+        <span class="fa-solid fa-bars"></span>
+      </div>
+
+      <a href="crash.html" target="wall-content">home</a>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="content">
+      <div class="navigation-box">
+        <div class="search-space">
+          <div class="input-box">
+            <input type="text" placeholder="just search" id="search">
+            <span class="fa-solid fa-magnifying-glass"></span> <!--Search icon-->
+          </div>
+        </div>
+        <nav>
+             <span>
+                <span></span>
+                <a href="wall-light-onoff.html" target="wall-content">Categories</a>
+             </span> 
+             <span>
+                <span></span>
+                <a href="">All books</a>
+             </span> 
+             <span>
+                <span></span>
+                <a href="">Literature</a>
+             </span> 
+             <span>
+                <span></span>
+                <a href="">Entenda o cássio</a>
+             </span> 
+             <span>
+                <span></span>
+                <a href="">Literature</a>
+             </span> 
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <div class="footer-text">
+
+          </div>
+          <div class="footer-links">
+            <a href="">About us</a>
+            <a href="">Terms & Privacy</a>
+            <a href="">Community</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="main-iframe">
+    <iframe src="crash.html" name="wall-content" height="100%" width="100%" title="wall content" id="iframe"></iframe>
+  </div>
+
+  <script src="scripts/sidebar.js"></script>
+  <script src="scripts/search.js"></script>
+</body>
+</html>

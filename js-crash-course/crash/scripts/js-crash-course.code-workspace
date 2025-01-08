@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "js-crash-course",
+			"path": "."
+		},
+		{
+			"name": "discordEfeitos",
+			"path": "../../../Music/discordEfeitos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js-crash-course"
+	}
+}
