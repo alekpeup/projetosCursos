@@ -1,0 +1,21 @@
+
+
+body { 
+   background-image: url(./imgs/bg-mobile.jpg);
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover;
+}
+
+#container {
+ border: 1px solid red;
+ width: 360px;
+ margin: auto;
+}
+
+#profile img {
+   display: block;
+   margin: auto;
+   width: 112px;
+   
+}
